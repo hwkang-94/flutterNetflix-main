@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "789727611555",
+    "project_id": "clonenetflix-9c1cc",
+    "storage_bucket": "clonenetflix-9c1cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789727611555:android:0501ae37fb3e0205ddcd16",
+        "android_client_info": {
+          "package_name": "com.example.clonenetflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789727611555-ntqb01lvk4tsuab6cu9q7rnnt0cm524e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clonenetflix",
+            "certificate_hash": "a480f7a47b315c95339b6426c5ac633f0cf7ce75"
+          }
+        },
+        {
+          "client_id": "789727611555-u2pka2htkufmri87t6riicrqapoqfi7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSwDQBvlwkHEnI_ZXuUiduJR3PacR8xuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789727611555-u2pka2htkufmri87t6riicrqapoqfi7l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "789727611555-eac2kgm549iffa5iucll78epd3fpllbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cleasf.cosc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
