@@ -10,8 +10,8 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   // 검색 위젯을 컨트롤하는 _filter가 변화를 감지하여 _serarchText의 상태르르 변화시키는 코드
   final TextEditingController _filter = TextEditingController();
-  String _searchText = "";
   FocusNode focusNode = FocusNode();
+  String _searchText = "";
 
   // 상태 변호 감지
   _SearchScreenState() {
@@ -38,10 +38,10 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget _buildList(BuildContext context, List<QueryDocumentSnapshot> snapshot) {
     List<DocumentSnapshot> searchResults = [];
     for(DocumentSnapshot d in snapshot) {
-      if(d.data.toString().contains(_searchText)) {
+      if(d.data().toString().contains(_searchText)) {
         print("_searchText : $_searchText");
         searchResults.add(d);
-      }
+     }
     }
     return Expanded(child: GridView.count(
       crossAxisCount: 3, // 한줄에 3칸
