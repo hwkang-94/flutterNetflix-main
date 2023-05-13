@@ -62,11 +62,25 @@ class _CarouselImageState extends State<CarouselImage> {
                       likes![_currentPage]
                           ? IconButton(
                               icon: Icon(Icons.check),
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  likes![_currentPage] = !likes![_currentPage];
+                                  movies![_currentPage]
+                                      .reference!
+                                      .update({'like': likes![_currentPage]});
+                                });
+                              },
                             )
                           : IconButton(
                               icon: Icon(Icons.add),
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  likes![_currentPage] = !likes![_currentPage];
+                                  movies![_currentPage]
+                                      .reference!
+                                      .update({'like': likes![_currentPage]});
+                                });
+                              },
                             ),
                       Text('내가 찜한 콘텐츠', style: TextStyle(fontSize: 11))
                     ],
@@ -110,8 +124,7 @@ class _CarouselImageState extends State<CarouselImage> {
                                 fullscreenDialog: true,
                                 builder: (BuildContext context) {
                                   return DetailScreen(
-                                      movie: movies![_currentPage]
-                                  );
+                                      movie: movies![_currentPage]);
                                 }));
                           },
                           icon: Icon(Icons.info)),

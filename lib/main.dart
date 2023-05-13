@@ -1,4 +1,5 @@
 import 'package:clonenetflix/screen/SearchScreen.dart';
+import 'package:clonenetflix/screen/like_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               HomeScreen(),
               SearchScreen(),
-              Container(child: Center(child: Text('save'),),),
+              LikeScreen(),
               Container(child: Center(child: Text('more'),),),
             ],
           ),
